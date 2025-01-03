@@ -16,4 +16,5 @@ class Form1(Form1Template):
     result = anvil.server.call("predict", self.file_loader_1.file)
     if result:
       self.label_2.visible = True
+      
       self.label_2.text = result
