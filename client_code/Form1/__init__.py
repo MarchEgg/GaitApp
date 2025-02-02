@@ -18,3 +18,12 @@ class Form1(Form1Template):
       self.label_2.visible = True
       
       self.label_2.text = result
+
+  
+
+  def generateButtonClick(self, **event_args):
+    """This method is called when the button is clicked"""
+    img = anvil.server.call("generateAngleGraphs")
+    if img:
+      self.KneeImage.visible = True
+      self.KneeImage.source = img
