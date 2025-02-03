@@ -27,4 +27,30 @@ class Form1(Form1Template):
     if img:
       self.KneeImage.visible = True
       self.KneeImage.source = img
-    self.graphsAllButton.background = app.theme_colors['Gray 30']
+    self.graphsAllButton.background = app.theme_colors['ButtonSelect']
+
+  def clickGraphAllButton(self, **event_args):
+    self.graphsAllButton.background = app.theme_colors['ButtonSelect']
+    self.graphsKneeButton.background = app.theme_colors['White']
+    self.graphsHipButton.background = app.theme_colors['White']
+    self.graphsAnkleButton.background = app.theme_colors['White']
+
+
+  def clickGraphKneeButton(self, **event_args):
+    self.graphsAllButton.background = app.theme_colors['White']
+    self.graphsKneeButton.background = app.theme_colors['ButtonSelect']
+    self.graphsHipButton.background = app.theme_colors['White']
+    self.graphsAnkleButton.background = app.theme_colors['White']
+
+  def clickGraphHipButton(self, **event_args):
+    self.graphsAllButton.background = app.theme_colors['White']
+    self.graphsKneeButton.background = app.theme_colors['ButtonSelect']
+    self.graphsHipButton.background = app.theme_colors['White']
+    self.graphsAnkleButton.background = app.theme_colors['White']
+
+  def clickGraphAnkleButton(self, **event_args):
+    self.graphsAllButton.background = app.theme_colors['White']
+    self.graphsKneeButton.background = app.theme_colors['ButtonSelect']
+    self.graphsHipButton.background = app.theme_colors['White']
+    self.graphsAnkleButton.background = app.theme_colors['White']
+
