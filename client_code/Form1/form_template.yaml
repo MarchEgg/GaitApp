@@ -36,20 +36,24 @@ components:
         name: label_3
         properties: {text: 'Select Graphs Shown:'}
         type: Label
-      - layout_properties: {grid_position: 'VREDND,XYBHSS'}
-        name: button_2
+      - event_bindings: {click: clickGraphAllButton}
+        layout_properties: {grid_position: 'VREDND,XYBHSS'}
+        name: graphsAllButton
         properties: {text: All}
         type: Button
-      - layout_properties: {grid_position: 'VREDND,NVDFWT'}
-        name: button_3
+      - event_bindings: {click: clickGraphKneeButton}
+        layout_properties: {grid_position: 'VREDND,NVDFWT'}
+        name: graphsKneeButton
         properties: {text: Knee}
         type: Button
-      - layout_properties: {grid_position: 'VREDND,UZHENO'}
-        name: button_4
+      - event_bindings: {click: clickGraphHipButton}
+        layout_properties: {grid_position: 'VREDND,UZHENO'}
+        name: graphsHipButton
         properties: {text: Hip}
         type: Button
-      - layout_properties: {grid_position: 'VREDND,XUESUF'}
-        name: button_5
+      - event_bindings: {click: clickGraphAnkleButton}
+        layout_properties: {grid_position: 'VREDND,XUESUF'}
+        name: graphsAnkleButton
         properties: {text: Ankle}
         type: Button
       layout_properties: {grid_position: 'ADXPVZ,RMTDHM'}
