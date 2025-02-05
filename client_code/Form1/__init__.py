@@ -60,7 +60,7 @@ class Form1(Form1Template):
     self.graphsHipButton.background = app.theme_colors['White']
     self.graphsAnkleButton.background = app.theme_colors['White']
 
-    hipImg = anvil.server.call("createGraph", "Hip", self.fitLine, self.norm)
+    hipImg = anvil.server.call("createGraph", "Hip", self.fitLine, self.norm, self.GraphCard.width)
     kneeImg = anvil.server.call("createGraph", "Knee", self.fitLine, self.norm)
     ankleImg =  anvil.server.call("createGraph", "Ankle", self.fitLine, self.norm)
     if hipImg:
